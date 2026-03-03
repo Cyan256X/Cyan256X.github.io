@@ -382,6 +382,12 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(96, 165, 250, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(96, 165, 250, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(96, 165, 250, 0); }
+        }
+
         .fade-in {
             animation: fadeIn 0.6s ease-out;
         }
@@ -409,6 +415,18 @@
     <!-- 英雄区域 -->
     <section class="hero" id="home">
         <div class="container hero-content fade-in">
+            <!-- AI 标注横幅 -->
+            <div style="background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(10px); border: 2px solid rgba(255, 255, 255, 0.3); border-radius: 12px; padding: 12px 20px; margin-bottom: 25px; display: inline-flex; align-items: center; gap: 10px; animation: pulse 2s infinite;">
+                <i class="fas fa-robot" style="font-size: 1.5rem; color: #60a5fa;"></i>
+                <div>
+                    <strong style="font-size: 1.1rem;">🤖 AI 辅助设计</strong>
+                    <div style="font-size: 0.9rem; opacity: 0.9;">本页面设计由 AI 生成，项目内容为原创</div>
+                </div>
+                <a href="./AI_DISCLOSURE.md" style="margin-left: 10px; background: rgba(255, 255, 255, 0.2); padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; text-decoration: none; color: white; border: 1px solid rgba(255, 255, 255, 0.3);">
+                    查看详情
+                </a>
+            </div>
+            
             <div class="avatar">
                 <i class="fas fa-user-astronaut"></i>
             </div>
@@ -474,13 +492,17 @@
                         <h3 class="project-title">
                             <i class="fas fa-robot"></i> Discord 句子生成器
                         </h3>
-                        <p class="project-description">一个有趣的 Discord 界面聊天生成器，可以创建逼真的对话截图。</p>
+                        <p class="project-description">一个有趣的 Discord 界面聊天生成器，可以创建逼真的对话截图。<span style="display: block; margin-top: 5px; font-size: 0.9rem; color: #6b7280; font-style: italic;">(复刻项目，已部署到 GitHub Pages)</span></p>
                         <div class="project-tech">
                             <span class="tech-tag">前端开发</span>
                             <span class="tech-tag">UI/UX</span>
                             <span class="tech-tag">图像生成</span>
+                            <span class="tech-tag" style="background: #fef3c7; color: #92400e;">复刻项目</span>
                         </div>
-                        <a href="https://github.com/Cyan256X/Discord-Sentence-Generator" class="read-more" target="_blank">GitHub 仓库 →</a>
+                        <div style="display: flex; gap: 10px; margin-top: 15px;">
+                            <a href="./discord-generator/" class="read-more">在线演示 →</a>
+                            <a href="https://github.com/Cyan256X/Discord-Sentence-Generator" class="read-more" target="_blank" style="color: #6b7280;">GitHub 仓库</a>
+                        </div>
                     </div>
                 </div>
             </section>
