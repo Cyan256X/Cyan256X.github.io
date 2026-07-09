@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CryoMirage</title>
+<script src="coi-serviceworker.js"></script>
+<style>
+body{background:#000;color:#fff;font-family:sans-serif;display:flex;justify-content:center;align-items:center;height:100vh;text-align:center;margin:0}
+#msg{max-width:400px}
+button{background:#4a90d9;color:#fff;border:none;padding:12px 24px;border-radius:6px;font-size:16px;cursor:pointer;margin-top:16px}
+</style>
+</head>
+<body>
+<div id="msg">
+<h2>Preparing CryoMirage...</h2>
+<p id="status">Setting up...</p>
+<button id="btn" style="display:none" onclick="go()">Launch</button>
+</div>
+<script>
+function go(){window.location.href="CryoMarige.html"}
+if("serviceWorker"in navigator){
+navigator.serviceWorker.register("coi-serviceworker.js",{scope:"./"}).then(function(r){
+setTimeout(go,800)
+}).catch(function(e){
+document.getElementById("status").textContent="Error: "+e.message;
+setTimeout(go,1000)
+})
+}else{document.getElementById("status").textContent="No SW";setTimeout(go,500)}
+</script>
+</body></html>
