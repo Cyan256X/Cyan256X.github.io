@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>仿制 Discord 聊天界面</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        alert('仿制 Discord 聊天界面\n仅为界面仿制，与 Discord 本体无关。\n公布本页面请标注原作者，谢谢。\nBilibili：@天蓝_Chiron')
+    </script>
+</head>
+
+<body>
+    <div class="chat-container">
+        <div class="message-container" id="messageContainer">
+            <!-- 消息将会在这里显示 -->
+        </div>
+        <div class="input-container">
+            <input type="text" id="userInput" placeholder="输入要发送的内容">
+            <button id="sendButton">发送</button>
+            <button id="settingsButton">设置</button>
+        </div>
+    </div>
+    <!-- 设置窗体 -->
+    <div id="settingsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>设置</h2>
+            <label for="usernameInput">名称:</label>
+            <input type="text" id="usernameInput" placeholder="输入显示名称"><br />
+            <label for="avatarInput">头像（点击上传）:</label>
+            <input type="file" id="avatarInput" accept="image/*">
+            <hr>
+            <label for="showIconCheckbox">显示 lowiro 图标</label>
+            <input type="checkbox" id="showIconCheckbox"><br /><br />
+            <button id="saveSettingsButton">保存</button>
+        </div>
+    </div>
+    <hr class="outside-border">
+    <div class="footer" style="text-align: center;font-size: medium;">
+        <h3>关于</h3>
+        <p class="footer-content">由<a href="https://github.com/MetallicAllex">〖天蓝〗</a>制作并<a
+                href="https://github.com/MetallicAllex/Discord-Sentence-Generator"> 开源</a>
+        <p class="footer-content" style="color: #d6ca26;">仅为界面仿制，<em>和 Discord 本体无关。</em></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
