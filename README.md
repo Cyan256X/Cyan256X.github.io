@@ -1,122 +1,20 @@
-# Cyan256X 个人博客网站
+# Cyan256X 个人工具箱
 
-这是一个蓝色系的个人博客主页，展示项目、技术文章和个人信息。
+个人自用小工具集合,部署于 GitHub Pages: https://cyan256x.github.io
 
-> **🤖 AI 生成声明**: 本页面的设计和内容由 AI 辅助生成，用于快速搭建个人博客原型。实际项目内容为原创。
+> ⚠️ **仅供自己玩耍,不向他人提供** — 本站所有工具均为个人自用。
 
-## 🎨 设计特点
+## 工具箱内容
 
-### 配色方案
-- **主色调**: 深蓝色 (#1e3a8a)
-- **辅色调**: 蓝色 (#3b82f6)
-- **强调色**: 浅蓝色 (#60a5fa)
-- **背景色**: 渐变蓝白背景
+| 工具 | 目录 | 说明 | 原仓库 |
+|---|---|---|---|
+| HoloPrint 结构投影 | `holoprint/` | MCBE 建筑结构全息投影资源包生成器(自带简体中文) | [HoloPrint-MC/holoprint-mc.github.io](https://github.com/HoloPrint-MC/holoprint-mc.github.io) |
+| MusiCalculator 音乐计算器 | `Musicalculator/` | 带大调音阶音效的计算器 | [facundonahuelcruz/musicalculator](https://github.com/facundonahuelcruz/musicalculator) |
+| 互动游戏集 | `hit/` | 小游戏集合(自制) | 自制,无原仓库 |
+| Discord 句子生成器 | `discord-generator/` | Discord 对话截图生成器(复刻) | [leon332157/Discord-Sentence-Generator](https://github.com/leon332157/Discord-Sentence-Generator) |
 
-### 功能模块
-1. **导航栏** - 固定导航，响应式设计
-2. **英雄区域** - 个人介绍和社交链接
-3. **项目展示** - 卡片式项目展示
-4. **技术博客** - 文章列表和摘要
-5. **侧边栏** - 技能展示、联系方式和最新动态
-6. **页脚** - 网站信息和快速链接
+## 版权说明
 
-## 🚀 技术特性
-
-### 前端技术
-- **HTML5** - 语义化标签
-- **CSS3** - 现代布局 (Grid, Flexbox)
-- **JavaScript** - 交互功能
-- **Font Awesome** - 图标库
-- **响应式设计** - 移动端适配
-
-### 交互功能
-- 平滑滚动导航
-- 滚动时导航栏透明效果
-- 卡片悬停动画
-- 页面加载动画
-- 控制台欢迎信息
-
-## 📁 项目结构
-
-```
-mcbottle.github.io/
-├── index.html          # 主页面
-├── style.css           # 补充样式
-├── README.md           # 说明文档
-├── Musicalculator/     # 音乐计算器项目
-├── hit/                # 互动游戏项目
-└── DONTREADME.md       # 趣味说明文件
-```
-
-## 🔗 项目链接
-
-### 现有项目
-1. **MusiCalculator** (`./Musicalculator/`)
-   - 带有音效的计算器
-   - 每个数字按键发出不同音调
-
-2. **互动游戏集** (`./hit/`)
-   - 多个小游戏和互动页面
-   - 展示前端交互技术
-
-### 外部项目
-- **Discord 句子生成器** - [GitHub 仓库](https://github.com/Cyan256X/Discord-Sentence-Generator)
-
-## 🛠️ 部署说明
-
-这个网站使用 **GitHub Pages** 自动部署：
-
-1. 推送到 `main` 分支
-2. GitHub Pages 自动构建
-3. 通过 `https://cyan256x.github.io` 访问
-
-## 📱 响应式设计
-
-- **桌面端** (≥ 768px) - 两栏布局
-- **平板端** (≥ 480px) - 自适应布局
-- **移动端** (< 480px) - 单栏布局
-
-## 🎯 未来计划
-
-### 短期计划
-- [ ] 添加更多技术文章
-- [ ] 完善项目详情页面
-- [ ] 添加暗色模式切换
-
-### 长期计划
-- [ ] 添加博客系统
-- [ ] 集成评论功能
-- [ ] 添加项目演示视频
-
-## 🤝 贡献
-
-欢迎提交 Issue 和 Pull Request 来改进这个网站！
-
-## 📄 许可证
-
-本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情。
-
----
-
-**最后更新**: 2024年3月3日  
-**作者**: Cyan256X  
-**网站**: https://cyan256x.github.io
-
----
-
-### 🎨 设计说明
-
-**AI 辅助生成内容**:
-- 页面整体布局和配色方案
-- 响应式设计实现
-- 交互动画效果
-- 示例博客文章内容
-- 技能展示模块设计
-
-**原创内容**:
-- 实际项目展示 (MusiCalculator, 互动游戏等)
-- 个人 GitHub 项目链接
-- 技术栈选择
-- 项目结构和部署方式
-
-**透明度声明**: 本网站使用 AI 工具辅助设计和内容生成，以快速搭建个人技术展示平台。所有代码和设计均可自由修改和使用。
+- HoloPrint 副本遵循 CC BY-NC-SA 4.0(见 `holoprint/LICENSE`),部署时间为 2026-08-12
+- 各复刻项目版权归原作者所有,均已在主页标注原仓库
+- 本站不向他人提供任何服务,请勿商用
